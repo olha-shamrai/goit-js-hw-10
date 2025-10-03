@@ -1,0 +1,105 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+input[type="number"] {
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+    width: auto;
+}
+
+input[type="number"]:focus {
+    border-color: #4cafef;
+}
+
+fieldset {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: left;
+    /* gap: 60px; */
+}
+
+fieldset label {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+legend {
+    font-weight: 500;
+    padding: 0 8px;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: #4cafef;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1f95db;
+    transform: translateY(-1px);
+}
+
+.back-link {
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    color: #4cafef;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #1f95db;
+}
